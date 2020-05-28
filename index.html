@@ -25,12 +25,12 @@
 
 	<main>
 
-		<h1>Сайт туристического городка в штате Аризона</h1>
+		<h1 class="visually-hidden">Сайт туристического городка в штате Аризона</h1>
 
 		<div class="tagline"><h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2></div>
 
 		<section class="reasons">
-			<h3>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h3>
+			<h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
 
 			<ol>
 				<li>
@@ -112,7 +112,7 @@
 	<footer>
 
 		<section>
-			<h2>Контакты</h2>
+			<h2 class="visually-hidden">Контакты</h2>
 			<p>
 				#visitsedona<br>
 				тел: +7(495)666-01-66
@@ -120,7 +120,7 @@
 		</section>
 
 		<section>
-			<h2>Социальные сети</h2>
+			<h2 class="visually-hidden">Социальные сети</h2>
 			<ul>
 				<li>
 					<a href="#">Твитер</a>
@@ -139,6 +139,31 @@
 			<a href="https://htmlacademy.ru"><img src="#" alt="htmlacademy logo"></a>
 		</p>
 	</footer>
+
+	<section>
+		<h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
+		<form action="https://echo.htmlacademy.ru" method="post">
+
+			<label for="arrivaldate">Дата заезда:</label>
+			<input type="text" name="arrivaldate" id="arrivaldate" value="24 апреля 2017"><br>
+
+			<label for="deputeday">Дата выезда:</label>
+			<input type="text" name="deputeday" id="deputeday" value="4 июла 2017"><br>
+
+			<label for="adults">Взрослые:</label>
+			<button type="button" id="minus">-</button>
+			<input type="text" name="adults" id="adults" value="2">
+			<button type="button" id="plus">+</button>
+
+			<label for="kids">Дети:</label>
+			<button type="button" id="minus">-</button>
+			<input type="text" name="kids" id="kids" value="0">
+			<button type="button" id="plus">+</button><br>
+
+			<button type="submit">Найти</button>
+
+		</form>	
+	</section>
 
 </body>
 </html>
