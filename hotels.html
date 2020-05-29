@@ -30,29 +30,58 @@
 
   <section aria-label="Фильтр поиска гостиницы">
 
-    Ифраструктура:<br>
-    <ul>
-      <li>Бассейн</li>
-      <li>Парковка</li>
-      <li>Wi-fi</li>
-    </ul>
+    <form action="https://echo.htmlacademy.ru" method="get">
 
-    Тип жилья:<br>
-    <ul>
-      <li>Гостиница</li>
-      <li>Мотель</li>
-      <li>Аппартаменты</li>
-    </ul>
+        <fieldset>
+            <legend>Ифраструктура:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="swimmingpool" id="swimmingpool" checked>
+                        <label for="swimmingpool">Бассейн</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="parking" id="parking">
+                        <label for="parking">Парковка</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="wifi" id="wifi">
+                        <label for="wifi">Wi-fi</label>
+                    </li>
+                </ul>
+        </fieldset>
 
-    <div>
-      Стоимость в сутки (р):<br>
-      <span>Выбор цены</span><br>
-      <button type="button">Показать</button>
-    </div>
+        <fieldset>
+            <legend>Тип жилья:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="hotel" id="hotel" checked>
+                        <label for="hotel">Гостиница</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="motel" id="motel" checked>
+                        <label for="motel">Мотель</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="apartment" id="apartment" checked>
+                        <label for="apartment">Аппартаменты</label>
+                    </li>
+                </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+            <span>от 0</span>
+            <span>до 3000</span><br>
+            <input type="range" name="price" min="0" max="4000" value="3000">
+        </fieldset>
+
+        <button type="submit">Показать</button>
+ 
+    </form>
 
   </section>
 
-  <section aria-label="Сортировка поиска гостиницы">
+  <section aria-label="Сортировка результатов поиска гостиницы">
     <p>Найдено:3</p>
     <p>Сортировка:</p>
     <ul>
