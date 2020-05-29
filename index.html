@@ -111,16 +111,14 @@
 
 	<footer>
 
-		<section>
-			<h2 class="visually-hidden">Контакты</h2>
+		<section aria-label="Контакты">
 			<p>
 				#visitsedona<br>
 				тел: +7(495)666-01-66
 			</p>
 		</section>
 
-		<section>
-			<h2 class="visually-hidden">Социальные сети</h2>
+		<section aria-label="Социальные сети">
 			<ul>
 				<li>
 					<a href="#">Твитер</a>
@@ -140,27 +138,32 @@
 		</p>
 	</footer>
 
-	<section>
-		<h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
+	<section class="searchform" aria-label="Форма поиска гостиницы в Седоне">
 		<form action="https://echo.htmlacademy.ru" method="post">
 
-			<label for="arrivaldate">Дата заезда:</label>
-			<input type="text" name="arrivaldate" id="arrivaldate" value="24 апреля 2017"><br>
+			<div class="searchform-block-1">
+				<label for="arrivaldate">Дата заезда:</label>
+				<input type="text" name="arrivaldate" id="arrivaldate" value="24 апреля 2017"><br>
 
-			<label for="deputeday">Дата выезда:</label>
-			<input type="text" name="deputeday" id="deputeday" value="4 июла 2017"><br>
+				<label for="deputeday">Дата выезда:</label>
+				<input type="text" name="deputeday" id="deputeday" value="4 июла 2017"><br>
+			</div>
 
-			<label for="adults">Взрослые:</label>
-			<button type="button" id="minus">-</button>
-			<input type="text" name="adults" id="adults" value="2">
-			<button type="button" id="plus">+</button>
+			<div class="searchform-block-2">
+				<label for="adults">Взрослые:</label>
+				<button type="button" id="minus">-</button>
+				<input type="text" name="adults" id="adults" value="2">
+				<button type="button" id="plus">+</button>
 
-			<label for="kids">Дети:</label>
-			<button type="button" id="minus">-</button>
-			<input type="text" name="kids" id="kids" value="0">
-			<button type="button" id="plus">+</button><br>
+				<label for="kids">Дети:</label>
+				<button type="button" id="minus">-</button>
+				<input type="text" name="kids" id="kids" value="0">
+				<button type="button" id="plus">+</button><br>
+			</div>
 
-			<button type="submit">Найти</button>
+			<div class="searchform-block-3">
+				<button type="submit">Найти</button>
+			</div>
 
 		</form>	
 	</section>
