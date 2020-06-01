@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона гостиницы</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
  <header>
 
-  <nav>
-    <a href="index.html">
+  <nav class="main-navigation">
+    <a href="index.html" class="main-header-logo">
       <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
     </a>
 
-    <ul>
+    <ul class="site-navigation">
       <li><a href="blank.html">информация</a></li>
       <li><a href="blank.html">фото и видео</a></li>
       <li><a href="blank.html">карта штата</a></li>
-      <li><a href="hotels.html">гостиницы</a></li>
+      <li><a href="hotels.html" class="current-page">гостиницы</a></li>
     </ul>
 
   </nav>
@@ -72,7 +75,8 @@
             <legend>Стоимость в сутки (р):</legend>
             <span>от 0</span>
             <span>до 3000</span><br>
-            <input type="range" name="price" min="0" max="4000" value="3000">
+            <input type="#" name="pricemin" min="0" max="4000" value="#">
+            <input type="#" name="pricemax" min="0" max="4000" value="#">
         </fieldset>
 
         <button type="submit">Показать</button>
@@ -99,7 +103,7 @@
     <img src="#" alt="Сортировка убывание"> <!--Сортировка убывание-->
   </section>
 
-  <section>
+  <section class="search-results">
     <ul>
       <li>
        <a href="#">
@@ -108,15 +112,15 @@
        </a>
 
        <p>гостиница</p>
-       <h3>от 4000 р.</h3>
+       <p>от 4000 р.</p>
        <p>
-         <a href="#">подробнее</a> 
-         <a href="#">зарезервировать</a> 
+         <a class="more-info" href="#">подробнее</a> 
+         <a class="reserve" href="#">зарезервировать</a> 
        </p>
 
        <div>
          <img src="#" alt="звездность"> 
-         <h3>рейтинг:8.5</h3>
+         <p class="rating">рейтинг:8.5</p>
        </div>
 
      </li>
@@ -128,15 +132,15 @@
        </a>
 
        <p>мотель</p>
-       <h3>от 3000 р.</h3>
+       <p>от 3000 р.</p>
        <p>
-         <a href="#">подробнее</a> 
-         <a href="#">зарезервировать</a> 
+         <a class="more-info" href="#">подробнее</a> 
+         <a class="reserve" href="#">зарезервировать</a> 
        </p>
 
        <div>
          <img src="#" alt="звездность"> 
-         <h3>рейтинг:8.9</h3>
+         <p class="rating">рейтинг:8.9</p>
        </div>
 
      </li>
@@ -148,15 +152,15 @@
        </a>
 
        <p>аппартаменты</p>
-       <h3>от 2000 р.</h3>
+       <p>от 2000 р.</p>
        <p>
-         <a href="#">подробнее</a> 
-         <a href="#">зарезервировать</a> 
+         <a class="more-info" href="#">подробнее</a> 
+         <a class="reserve" href="#">зарезервировать</a> 
        </p>
 
        <div>
          <img src="#" alt="звездность"> 
-         <h3>рейтинг:9.2</h3>
+         <p class="rating">рейтинг:9.2</p>
        </div>
        
      </li>
@@ -166,32 +170,32 @@
 </main>
 
 <footer>
-  
-  <section aria-label="Контакты">
-    <p>
-      #visitsedona<br>
-      тел: +7(495)666-01-66
+
+    <section class="footer-contacts" aria-label="Контакты">
+        <p>
+            #visitsedona<br>
+            <a href="tel:+74956660166">тел: +7(495)666-01-66</a>
+        </p>
+    </section>
+
+    <section class="footer-social" aria-label="Социальные сети">
+        <ul class="footer-social-list">
+            <li>
+                <a href="#">Твитер</a>
+            </li>
+            <li>
+                <a href="#">Фейсбук</a>
+            </li>
+            <li>
+                <a href="#">Ютуб</a>
+            </li>
+        </ul>
+    </section>
+
+    <p class="site-by">
+        website by
+        <a href="https://htmlacademy.ru"><img src="#" alt="htmlacademy logo"></a>
     </p>
-  </section>
-
-  <section aria-label="Социальные сети">
-    <ul>
-      <li>
-        <a href="#">Твитер</a>
-      </li>
-      <li>
-        <a href="#">Фейсбук</a>
-      </li>
-      <li>
-        <a href="#">Ютуб</a>
-      </li>
-    </ul>
-  </section>
-
-  <p>
-    website by
-    <a href="https://htmlacademy.ru"><img src="#" alt="htmlacademy logo"></a>
-  </p>
 </footer>
 
 </body>
